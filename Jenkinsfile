@@ -1,12 +1,14 @@
 pipeline {
     agent any
+    script {
+       def username="Hsy"
+    }
     parameters {
         string(name: 'test', defaultValue: 'Hello', description: 'How should I greet the world?')
     }
     stages {
         stage('Build') {
             steps {
-                def username="Hsy"
                 echo 'Building..'
                 echo "hellow ${username}"
             }
