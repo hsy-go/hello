@@ -16,7 +16,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-                echo "parameters ${parameters.test}"
+                echo "parameters ${params.test}"
             }
         }
         stage('Deploy') {
