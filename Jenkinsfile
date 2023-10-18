@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    def username = 'Hsy'
+    def username = "Hsy"
     parameters {
         string(name: 'test', defaultValue: 'Hello', description: 'How should I greet the world?')
     }
