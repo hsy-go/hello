@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                def username = "Hsy"
+                def username="Hsy"
                 echo 'Building..'
                 echo "hellow ${username}"
             }
