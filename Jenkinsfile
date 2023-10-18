@@ -8,9 +8,9 @@ pipeline {
             steps {
                 echo 'Building..'
                 script {
-                def username="Hsy"
+                    def username="Hsy"
+                    echo "hellow ${username}"
                 }
-                echo "hellow ${username}"
             }
         }
         stage('Test') {
