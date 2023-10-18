@@ -1,5 +1,6 @@
 node {
-    def username="Hsy"
+    checkout scm
+    def username = "Hsy"
     stage('Build') {
         echo 'Building....'
         echo "${username}"
